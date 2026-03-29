@@ -183,16 +183,16 @@ const mockData = {
             name: '泰宁铁皮石斛种植基地',
             description: '建设100亩铁皮石斛种植基地，采用现代化温室大棚技术',
             budget: 600000,
-            startDate: '2026-01-15',
-            endDate: '2026-12-31',
+            startDate: '2026-03-27',
+            endDate: '2027-03-31',
             progress: 50,
             implementationProcess: [
-                '2026年1-2月：完成基地选址与土地流转',
-                '2026年3-4月：建设温室大棚，采购铁皮石斛种苗',
+                '2026年3-4月：完成基地选址与土地流转',
+                '2026年4-5月：建设温室大棚，采购铁皮石斛种苗',
                 '2026年5-8月：进行种植与初期管理',
                 '2026年5-10月：开展病虫害防治',
                 '2026年9-11月：进行中期管理与养护',
-                '2026年12月：收获与加工，进行产品检测与认证，开展市场销售'
+                '2027年1-3月：收获与加工，进行产品检测与认证，开展市场销售'
             ],
             completedItems: [
                 '基地选址与土地流转',
@@ -200,15 +200,15 @@ const mockData = {
                 '铁皮石斛种苗采购'
             ],
             tasks: [
-                { id: 'T004-01', name: '基地选址与土地流转', status: '已完成', percentage: 100, startDate: '2026-01-15', endDate: '2026-02-28', responsible: '吴永华' },
-                { id: 'T004-02', name: '温室大棚建设', status: '已完成', percentage: 100, startDate: '2026-03-01', endDate: '2026-04-30', responsible: '县农业局' },
-                { id: 'T004-03', name: '铁皮石斛种苗采购', status: '已完成', percentage: 100, startDate: '2026-04-01', endDate: '2026-04-30', responsible: '吴永华' },
-                { id: 'T004-04', name: '种植与初期管理', status: '进行中', percentage: 60, startDate: '2026-05-01', endDate: '2026-08-31', responsible: '吴永华' },
-                { id: 'T004-05', name: '病虫害防治', status: '进行中', percentage: 50, startDate: '2026-05-01', endDate: '2026-10-31', responsible: '县植保站' },
-                { id: 'T004-06', name: '中期管理与养护', status: '进行中', percentage: 40, startDate: '2026-09-01', endDate: '2026-11-30', responsible: '吴永华' },
-                { id: 'T004-07', name: '收获与加工', status: '未开始', percentage: 0, startDate: '2026-12-01', endDate: '2026-12-31', responsible: '吴永华' },
-                { id: 'T004-08', name: '产品检测与认证', status: '未开始', percentage: 0, startDate: '2026-12-15', endDate: '2026-12-31', responsible: '县农产品检测中心' },
-                { id: 'T004-09', name: '市场销售', status: '未开始', percentage: 0, startDate: '2026-12-01', endDate: '2026-12-31', responsible: '县电商办' },
+                { id: 'T004-01', name: '基地选址与土地流转', status: '已完成', percentage: 100, startDate: '2026-03-27', endDate: '2026-04-15', responsible: '吴永华' },
+                { id: 'T004-02', name: '温室大棚建设', status: '已完成', percentage: 100, startDate: '2026-04-16', endDate: '2026-05-31', responsible: '县农业局' },
+                { id: 'T004-03', name: '铁皮石斛种苗采购', status: '已完成', percentage: 100, startDate: '2026-05-01', endDate: '2026-05-31', responsible: '吴永华' },
+                { id: 'T004-04', name: '种植与初期管理', status: '进行中', percentage: 60, startDate: '2026-06-01', endDate: '2026-09-30', responsible: '吴永华' },
+                { id: 'T004-05', name: '病虫害防治', status: '进行中', percentage: 50, startDate: '2026-06-01', endDate: '2026-11-30', responsible: '县植保站' },
+                { id: 'T004-06', name: '中期管理与养护', status: '进行中', percentage: 40, startDate: '2026-10-01', endDate: '2026-12-31', responsible: '吴永华' },
+                { id: 'T004-07', name: '收获与加工', status: '未开始', percentage: 0, startDate: '2027-01-01', endDate: '2027-02-28', responsible: '吴永华' },
+                { id: 'T004-08', name: '产品检测与认证', status: '未开始', percentage: 0, startDate: '2027-02-15', endDate: '2027-03-15', responsible: '县农产品检测中心' },
+                { id: 'T004-09', name: '市场销售', status: '未开始', percentage: 0, startDate: '2027-03-01', endDate: '2027-03-31', responsible: '县电商办' },
             ]
         },
         {
@@ -216,31 +216,31 @@ const mockData = {
             name: '泰宁锥栗产业发展项目',
             description: '建设锥栗种植基地，推广高产品种和科学种植技术',
             budget: 300000,
-            startDate: '2026-02-15',
-            endDate: '2026-12-31',
+            startDate: '2026-03-27',
+            endDate: '2027-02-28',
             progress: 40,
             implementationProcess: [
-                '2026年2-3月：完成基地选址与规划，采购优质锥栗苗',
+                '2026年3-4月：完成基地选址与规划，采购优质锥栗苗',
                 '2026年4-6月：进行种植与初期管理',
                 '2026年5-9月：开展病虫害防治',
                 '2026年6-8月：进行夏季管理与施肥',
                 '2026年9-10月：秋季收获',
                 '2026年10-11月：产品加工与包装',
-                '2026年11-12月：市场销售'
+                '2026年11-2027年2月：市场销售'
             ],
             completedItems: [
                 '基地选址与规划',
                 '优质锥栗苗采购'
             ],
             tasks: [
-                { id: 'T005-01', name: '基地选址与规划', status: '已完成', percentage: 100, startDate: '2026-02-15', endDate: '2026-03-15', responsible: '陈美华' },
-                { id: 'T005-02', name: '优质锥栗苗采购', status: '已完成', percentage: 100, startDate: '2026-03-01', endDate: '2026-03-31', responsible: '陈美华' },
-                { id: 'T005-03', name: '种植与初期管理', status: '进行中', percentage: 60, startDate: '2026-04-01', endDate: '2026-06-30', responsible: '陈美华' },
-                { id: 'T005-04', name: '病虫害防治', status: '进行中', percentage: 50, startDate: '2026-05-01', endDate: '2026-09-30', responsible: '县植保站' },
-                { id: 'T005-05', name: '夏季管理与施肥', status: '进行中', percentage: 40, startDate: '2026-06-01', endDate: '2026-08-31', responsible: '陈美华' },
-                { id: 'T005-06', name: '秋季收获', status: '未开始', percentage: 0, startDate: '2026-09-15', endDate: '2026-10-15', responsible: '陈美华' },
-                { id: 'T005-07', name: '产品加工与包装', status: '未开始', percentage: 0, startDate: '2026-10-20', endDate: '2026-11-30', responsible: '县农产品加工中心' },
-                { id: 'T005-08', name: '市场销售', status: '未开始', percentage: 0, startDate: '2026-11-01', endDate: '2026-12-31', responsible: '县电商办' },
+                { id: 'T005-01', name: '基地选址与规划', status: '已完成', percentage: 100, startDate: '2026-03-27', endDate: '2026-04-15', responsible: '陈美华' },
+                { id: 'T005-02', name: '优质锥栗苗采购', status: '已完成', percentage: 100, startDate: '2026-04-16', endDate: '2026-04-30', responsible: '陈美华' },
+                { id: 'T005-03', name: '种植与初期管理', status: '进行中', percentage: 60, startDate: '2026-05-01', endDate: '2026-07-31', responsible: '陈美华' },
+                { id: 'T005-04', name: '病虫害防治', status: '进行中', percentage: 50, startDate: '2026-06-01', endDate: '2026-10-31', responsible: '县植保站' },
+                { id: 'T005-05', name: '夏季管理与施肥', status: '进行中', percentage: 40, startDate: '2026-07-01', endDate: '2026-09-30', responsible: '陈美华' },
+                { id: 'T005-06', name: '秋季收获', status: '未开始', percentage: 0, startDate: '2026-10-01', endDate: '2026-11-15', responsible: '陈美华' },
+                { id: 'T005-07', name: '产品加工与包装', status: '未开始', percentage: 0, startDate: '2026-11-16', endDate: '2026-12-31', responsible: '县农产品加工中心' },
+                { id: 'T005-08', name: '市场销售', status: '未开始', percentage: 0, startDate: '2027-01-01', endDate: '2027-02-28', responsible: '县电商办' },
             ]
         },
     ],
