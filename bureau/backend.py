@@ -124,16 +124,16 @@ projects = [
         "name": "泰宁县有机大米种植基地建设",
         "description": "建设500亩有机大米种植基地，配备现代化灌溉设施和病虫害防治系统",
         "budget": 500000,
-        "startDate": "2026-01-01",
+        "startDate": "2026-03-27",
         "endDate": "2026-12-31",
         "progress": 65,
         "implementationProcess": [
-            "2026年1月：完成土地平整与规划，确定种植区域和灌溉系统布局",
-            "2026年2月：完成灌溉系统设计与安装，采购有机种子",
-            "2026年3月：完成春季播种，开展种植技术培训",
-            "2026年4-8月：进行病虫害绿色防治和夏季田间管理",
-            "2026年9-10月：秋季收获，进行产品质量检测",
-            "2026年11-12月：产品加工与包装，品牌注册与推广"
+            "2026年3月：完成土地平整与规划，确定种植区域和灌溉系统布局",
+            "2026年4月：完成灌溉系统设计与安装，采购有机种子",
+            "2026年5月：完成春季播种，开展种植技术培训",
+            "2026年6-10月：进行病虫害绿色防治和夏季田间管理",
+            "2026年11-12月：秋季收获，进行产品质量检测",
+            "2027年1-2月：产品加工与包装，品牌注册与推广"
         ],
         "completedItems": [
             "土地平整与规划",
@@ -143,15 +143,15 @@ projects = [
             "种植技术培训"
         ],
         "tasks": [
-            {"id": "T001-01", "name": "土地平整与规划", "status": "已完成", "percentage": 100, "startDate": "2026-01-01", "endDate": "2026-01-31", "responsible": "林德发"},
-            {"id": "T001-02", "name": "灌溉系统设计与安装", "status": "已完成", "percentage": 100, "startDate": "2026-02-01", "endDate": "2026-02-28", "responsible": "县农业局技术团队"},
-            {"id": "T001-03", "name": "有机种子采购", "status": "已完成", "percentage": 100, "startDate": "2026-02-15", "endDate": "2026-02-28", "responsible": "张木生"},
-            {"id": "T001-04", "name": "春季播种", "status": "已完成", "percentage": 100, "startDate": "2026-03-01", "endDate": "2026-03-15", "responsible": "林德发、吴德福"},
-            {"id": "T001-05", "name": "病虫害绿色防治", "status": "进行中", "percentage": 70, "startDate": "2026-04-01", "endDate": "2026-08-31", "responsible": "县植保站"},
-            {"id": "T001-06", "name": "夏季田间管理", "status": "进行中", "percentage": 50, "startDate": "2026-05-01", "endDate": "2026-08-31", "responsible": "林德发、吴德福"},
-            {"id": "T001-07", "name": "秋季收获", "status": "未开始", "percentage": 0, "startDate": "2026-09-15", "endDate": "2026-10-15", "responsible": "林德发、吴德福"},
-            {"id": "T001-08", "name": "产品加工与包装", "status": "未开始", "percentage": 0, "startDate": "2026-10-20", "endDate": "2026-11-30", "responsible": "县农产品加工中心"},
-            {"id": "T001-09", "name": "品牌注册与推广", "status": "未开始", "percentage": 0, "startDate": "2026-11-01", "endDate": "2026-12-31", "responsible": "县电商办"},
+            {"id": "T001-01", "name": "土地平整与规划", "status": "已完成", "percentage": 100, "startDate": "2026-03-27", "endDate": "2026-04-15", "responsible": "林德发"},
+            {"id": "T001-02", "name": "灌溉系统设计与安装", "status": "已完成", "percentage": 100, "startDate": "2026-04-16", "endDate": "2026-04-30", "responsible": "县农业局技术团队"},
+            {"id": "T001-03", "name": "有机种子采购", "status": "已完成", "percentage": 100, "startDate": "2026-04-10", "endDate": "2026-04-25", "responsible": "张木生"},
+            {"id": "T001-04", "name": "春季播种", "status": "已完成", "percentage": 100, "startDate": "2026-05-01", "endDate": "2026-05-15", "responsible": "林德发、吴德福"},
+            {"id": "T001-05", "name": "病虫害绿色防治", "status": "进行中", "percentage": 70, "startDate": "2026-06-01", "endDate": "2026-10-31", "responsible": "县植保站"},
+            {"id": "T001-06", "name": "夏季田间管理", "status": "进行中", "percentage": 50, "startDate": "2026-06-01", "endDate": "2026-10-31", "responsible": "林德发、吴德福"},
+            {"id": "T001-07", "name": "秋季收获", "status": "未开始", "percentage": 0, "startDate": "2026-11-01", "endDate": "2026-12-15", "responsible": "林德发、吴德福"},
+            {"id": "T001-08", "name": "产品加工与包装", "status": "未开始", "percentage": 0, "startDate": "2027-01-01", "endDate": "2027-01-31", "responsible": "县农产品加工中心"},
+            {"id": "T001-09", "name": "品牌注册与推广", "status": "未开始", "percentage": 0, "startDate": "2027-02-01", "endDate": "2027-02-28", "responsible": "县电商办"},
         ]
     },
     {
@@ -159,14 +159,14 @@ projects = [
         "name": "大金湖有机鱼养殖项目",
         "description": "在大金湖周边建设200亩有机鱼养殖基地，推广生态养殖技术",
         "budget": 350000,
-        "startDate": "2026-02-01",
-        "endDate": "2026-11-30",
+        "startDate": "2026-03-27",
+        "endDate": "2026-12-31",
         "progress": 45,
         "implementationProcess": [
-            "2026年2-3月：完成鱼塘选址与建设，采购鱼苗并进行检疫",
-            "2026年3-4月：安装养殖设备，进行鱼苗投放",
+            "2026年3-4月：完成鱼塘选址与建设，采购鱼苗并进行检疫",
+            "2026年4-5月：安装养殖设备，进行鱼苗投放",
             "2026年5-10月：开展日常饲养管理，进行水质监测与管理",
-            "2026年10-11月：成鱼捕捞，进行市场销售与渠道建设"
+            "2026年11-12月：成鱼捕捞，进行市场销售与渠道建设"
         ],
         "completedItems": [
             "鱼塘选址与建设",
@@ -175,15 +175,15 @@ projects = [
             "鱼苗投放"
         ],
         "tasks": [
-            {"id": "T002-01", "name": "鱼塘选址与建设", "status": "已完成", "percentage": 100, "startDate": "2026-02-01", "endDate": "2026-03-15", "responsible": "王水金"},
-            {"id": "T002-02", "name": "鱼苗采购与检疫", "status": "已完成", "percentage": 100, "startDate": "2026-03-01", "endDate": "2026-03-31", "responsible": "县水产站"},
-            {"id": "T002-03", "name": "养殖设备安装", "status": "已完成", "percentage": 100, "startDate": "2026-03-15", "endDate": "2026-04-15", "responsible": "黄永强"},
-            {"id": "T002-04", "name": "鱼苗投放", "status": "已完成", "percentage": 100, "startDate": "2026-04-20", "endDate": "2026-04-30", "responsible": "王水金、黄永强"},
-            {"id": "T002-05", "name": "日常饲养管理", "status": "进行中", "percentage": 60, "startDate": "2026-05-01", "endDate": "2026-10-31", "responsible": "王水金"},
-            {"id": "T002-06", "name": "有机饲料采购", "status": "进行中", "percentage": 50, "startDate": "2026-05-01", "endDate": "2026-09-30", "responsible": "黄永强"},
-            {"id": "T002-07", "name": "水质监测与管理", "status": "进行中", "percentage": 70, "startDate": "2026-05-01", "endDate": "2026-10-31", "responsible": "县水产站"},
-            {"id": "T002-08", "name": "成鱼捕捞", "status": "未开始", "percentage": 0, "startDate": "2026-10-01", "endDate": "2026-11-15", "responsible": "王水金、黄永强"},
-            {"id": "T002-09", "name": "市场销售与渠道建设", "status": "未开始", "percentage": 0, "startDate": "2026-11-01", "endDate": "2026-11-30", "responsible": "县电商办"},
+            {"id": "T002-01", "name": "鱼塘选址与建设", "status": "已完成", "percentage": 100, "startDate": "2026-03-27", "endDate": "2026-04-15", "responsible": "王水金"},
+            {"id": "T002-02", "name": "鱼苗采购与检疫", "status": "已完成", "percentage": 100, "startDate": "2026-04-01", "endDate": "2026-04-30", "responsible": "县水产站"},
+            {"id": "T002-03", "name": "养殖设备安装", "status": "已完成", "percentage": 100, "startDate": "2026-04-16", "endDate": "2026-05-15", "responsible": "黄永强"},
+            {"id": "T002-04", "name": "鱼苗投放", "status": "已完成", "percentage": 100, "startDate": "2026-05-20", "endDate": "2026-05-31", "responsible": "王水金、黄永强"},
+            {"id": "T002-05", "name": "日常饲养管理", "status": "进行中", "percentage": 60, "startDate": "2026-06-01", "endDate": "2026-10-31", "responsible": "王水金"},
+            {"id": "T002-06", "name": "有机饲料采购", "status": "进行中", "percentage": 50, "startDate": "2026-06-01", "endDate": "2026-09-30", "responsible": "黄永强"},
+            {"id": "T002-07", "name": "水质监测与管理", "status": "进行中", "percentage": 70, "startDate": "2026-06-01", "endDate": "2026-10-31", "responsible": "县水产站"},
+            {"id": "T002-08", "name": "成鱼捕捞", "status": "未开始", "percentage": 0, "startDate": "2026-11-01", "endDate": "2026-12-15", "responsible": "王水金、黄永强"},
+            {"id": "T002-09", "name": "市场销售与渠道建设", "status": "未开始", "percentage": 0, "startDate": "2026-12-01", "endDate": "2026-12-31", "responsible": "县电商办"},
         ]
     },
     {
@@ -191,8 +191,8 @@ projects = [
         "name": "泰宁红茶产业升级",
         "description": "升级改造红茶加工厂，引进先进加工设备，提高产品质量和产量",
         "budget": 420000,
-        "startDate": "2026-03-01",
-        "endDate": "2026-10-31",
+        "startDate": "2026-03-27",
+        "endDate": "2026-11-30",
         "progress": 30,
         "implementationProcess": [
             "2026年3月：完成加工厂选址与规划",
@@ -202,21 +202,21 @@ projects = [
             "2026年7-8月：开展技术人员培训",
             "2026年8月：进行试生产与质量检测",
             "2026年9月：正式投产",
-            "2026年9-10月：进行品牌推广与市场开拓"
+            "2026年9-11月：进行品牌推广与市场开拓"
         ],
         "completedItems": [
             "加工厂选址与规划",
             "先进加工设备采购"
         ],
         "tasks": [
-            {"id": "T003-01", "name": "加工厂选址与规划", "status": "已完成", "percentage": 100, "startDate": "2026-03-01", "endDate": "2026-03-31", "responsible": "郑美英"},
-            {"id": "T003-02", "name": "先进加工设备采购", "status": "已完成", "percentage": 100, "startDate": "2026-04-01", "endDate": "2026-05-15", "responsible": "县茶产业办"},
-            {"id": "T003-03", "name": "厂房改造与装修", "status": "进行中", "percentage": 70, "startDate": "2026-05-01", "endDate": "2026-06-30", "responsible": "郑美英"},
-            {"id": "T003-04", "name": "设备安装与调试", "status": "进行中", "percentage": 40, "startDate": "2026-06-15", "endDate": "2026-07-31", "responsible": "设备供应商"},
-            {"id": "T003-05", "name": "技术人员培训", "status": "未开始", "percentage": 0, "startDate": "2026-07-15", "endDate": "2026-08-15", "responsible": "县茶产业办"},
-            {"id": "T003-06", "name": "试生产与质量检测", "status": "未开始", "percentage": 0, "startDate": "2026-08-01", "endDate": "2026-08-31", "responsible": "郑美英"},
-            {"id": "T003-07", "name": "正式投产", "status": "未开始", "percentage": 0, "startDate": "2026-09-01", "endDate": "2026-09-30", "responsible": "郑美英"},
-            {"id": "T003-08", "name": "品牌推广与市场开拓", "status": "未开始", "percentage": 0, "startDate": "2026-09-15", "endDate": "2026-10-31", "responsible": "县电商办"},
+            {"id": "T003-01", "name": "加工厂选址与规划", "status": "已完成", "percentage": 100, "startDate": "2026-03-27", "endDate": "2026-04-15", "responsible": "郑美英"},
+            {"id": "T003-02", "name": "先进加工设备采购", "status": "已完成", "percentage": 100, "startDate": "2026-04-16", "endDate": "2026-05-30", "responsible": "县茶产业办"},
+            {"id": "T003-03", "name": "厂房改造与装修", "status": "进行中", "percentage": 70, "startDate": "2026-06-01", "endDate": "2026-07-15", "responsible": "郑美英"},
+            {"id": "T003-04", "name": "设备安装与调试", "status": "进行中", "percentage": 40, "startDate": "2026-07-16", "endDate": "2026-08-31", "responsible": "设备供应商"},
+            {"id": "T003-05", "name": "技术人员培训", "status": "未开始", "percentage": 0, "startDate": "2026-09-01", "endDate": "2026-09-30", "responsible": "县茶产业办"},
+            {"id": "T003-06", "name": "试生产与质量检测", "status": "未开始", "percentage": 0, "startDate": "2026-10-01", "endDate": "2026-10-31", "responsible": "郑美英"},
+            {"id": "T003-07", "name": "正式投产", "status": "未开始", "percentage": 0, "startDate": "2026-11-01", "endDate": "2026-11-15", "responsible": "郑美英"},
+            {"id": "T003-08", "name": "品牌推广与市场开拓", "status": "未开始", "percentage": 0, "startDate": "2026-11-16", "endDate": "2026-11-30", "responsible": "县电商办"},
         ]
     },
     {
