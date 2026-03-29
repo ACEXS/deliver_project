@@ -226,22 +226,21 @@ const RealtimeMonitoring: React.FC = () => {
                   flexDirection: 'column'
                 }}
               >
-                <div style={{ marginBottom: 24 }}>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: 14, color: '#666', marginBottom: 8 }}>{spot.name}</div>
                   <Statistic
-                    title="当前游客数"
                     value={spot.currentCount}
                     suffix={`/ ${spot.capacity}`}
-                    valueStyle={{ 
+                    valueStyle={{
                       color: getStatusColor(spot.status),
                       fontSize: 32,
                       fontWeight: 'bold'
                     }}
-                    titleStyle={{ fontSize: 14, color: '#666', marginBottom: 8 }}
                   />
                 </div>
                 <Progress
                   percent={(spot.currentCount / spot.capacity) * 100}
-                  status={spot.status === 'danger' ? 'exception' : spot.status === 'warning' ? 'warning' : 'normal'}
+                  status={spot.status === 'danger' ? 'exception' : 'normal'}
                   strokeColor={{
                     from: getStatusColor(spot.status),
                     to: getStatusColor(spot.status),
@@ -251,34 +250,32 @@ const RealtimeMonitoring: React.FC = () => {
                 />
                 <Row gutter={24} style={{ marginBottom: 24 }}>
                   <Col span={12}>
+                    <div style={{ fontSize: 14, color: '#666', marginBottom: 4 }}>今日进入</div>
                     <Statistic
-                      title="今日进入"
                       value={spot.inCount}
                       valueStyle={{ 
                         color: '#1890ff',
                         fontSize: 20,
                         fontWeight: 'bold'
                       }}
-                      titleStyle={{ fontSize: 14, color: '#666', marginBottom: 4 }}
                     />
                   </Col>
                   <Col span={12}>
+                    <div style={{ fontSize: 14, color: '#666', marginBottom: 4 }}>今日离开</div>
                     <Statistic
-                      title="今日离开"
                       value={spot.outCount}
                       valueStyle={{ 
                         color: '#722ed1',
                         fontSize: 20,
                         fontWeight: 'bold'
                       }}
-                      titleStyle={{ fontSize: 14, color: '#666', marginBottom: 4 }}
                     />
                   </Col>
                 </Row>
                 <Row style={{ marginBottom: 24 }}>
                   <Col span={24}>
+                    <div style={{ fontSize: 14, color: '#666', marginBottom: 4 }}>变化率</div>
                     <Statistic
-                      title="变化率"
                       value={spot.changeRate}
                       suffix="%"
                       prefix={spot.changeRate >= 0 ? <ArrowUpOutlined /> : <ArrowDownOutlined />}
@@ -287,7 +284,6 @@ const RealtimeMonitoring: React.FC = () => {
                         fontSize: 20,
                         fontWeight: 'bold'
                       }}
-                      titleStyle={{ fontSize: 14, color: '#666', marginBottom: 4 }}
                     />
                   </Col>
                 </Row>

@@ -6,7 +6,6 @@ import {
   AreaChartOutlined, 
   DollarOutlined, 
   ArrowUpOutlined, 
-  ArrowDownOutlined,
   BarChartOutlined,
   PieChartOutlined,
   CalendarOutlined
@@ -18,7 +17,7 @@ const Dashboard: React.FC = () => {
   const pieChartRef = useRef<HTMLDivElement>(null)
   const barChartRef = useRef<HTMLDivElement>(null)
   const [loading, setLoading] = React.useState(true)
-  const [currentDate, setCurrentDate] = useState(new Date().toLocaleDateString())
+  const [currentDate] = useState(new Date().toLocaleDateString())
 
   // 模拟数据
   const mockData = {
@@ -271,15 +270,16 @@ const Dashboard: React.FC = () => {
     <div className="dashboard-container">
       <Row justify="space-between" align="middle" style={{ marginBottom: 32 }}>
         <h1 style={{ fontSize: 28, fontWeight: 'bold', margin: 0 }}>数据概览</h1>
-        <Space size="middle">
-          <Statistic
-            title="统计日期"
-            value={currentDate}
-            prefix={<CalendarOutlined />}
-            titleStyle={{ fontSize: 14, color: '#666' }}
-            valueStyle={{ fontSize: 16 }}
-          />
-        </Space>
+        <Space style={{ marginBottom: 24 }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: 14, color: '#666', marginBottom: 8 }}>统计日期</div>
+              <Statistic
+                value={currentDate}
+                prefix={<CalendarOutlined />}
+                valueStyle={{ fontSize: 16 }}
+              />
+            </div>
+          </Space>
       </Row>
 
       <Spin spinning={loading} tip="加载数据中...">
@@ -297,8 +297,8 @@ const Dashboard: React.FC = () => {
                 body: { padding: 24 }
               }}
             >
+              <div style={{ fontSize: 14, color: '#666', marginBottom: 8 }}>总游客数</div>
               <Statistic
-                title="总游客数"
                 value={mockData.totalVisitors}
                 suffix="人"
                 prefix={<UserOutlined style={{ color: '#1890ff' }} />}
@@ -307,7 +307,6 @@ const Dashboard: React.FC = () => {
                   fontSize: 32,
                   fontWeight: 'bold'
                 }}
-                titleStyle={{ fontSize: 14, color: '#666', marginBottom: 8 }}
               />
               <Space size="small" style={{ marginTop: 12 }}>
                 <ArrowUpOutlined style={{ color: '#52c41a' }} />
@@ -328,8 +327,8 @@ const Dashboard: React.FC = () => {
                 body: { padding: 24 }
               }}
             >
+              <div style={{ fontSize: 14, color: '#666', marginBottom: 8 }}>今日游客</div>
               <Statistic
-                title="今日游客"
                 value={mockData.todayVisitors}
                 suffix="人"
                 prefix={<ClockCircleOutlined style={{ color: '#52c41a' }} />}
@@ -338,7 +337,6 @@ const Dashboard: React.FC = () => {
                   fontSize: 32,
                   fontWeight: 'bold'
                 }}
-                titleStyle={{ fontSize: 14, color: '#666', marginBottom: 8 }}
               />
               <Space size="small" style={{ marginTop: 12 }}>
                 <ArrowUpOutlined style={{ color: '#52c41a' }} />
@@ -359,8 +357,8 @@ const Dashboard: React.FC = () => {
                 body: { padding: 24 }
               }}
             >
+              <div style={{ fontSize: 14, color: '#666', marginBottom: 8 }}>平均停留时间</div>
               <Statistic
-                title="平均停留时间"
                 value={mockData.averageStayTime}
                 suffix="分钟"
                 prefix={<AreaChartOutlined style={{ color: '#faad14' }} />}
@@ -369,7 +367,6 @@ const Dashboard: React.FC = () => {
                   fontSize: 32,
                   fontWeight: 'bold'
                 }}
-                titleStyle={{ fontSize: 14, color: '#666', marginBottom: 8 }}
               />
               <Space size="small" style={{ marginTop: 12 }}>
                 <ArrowUpOutlined style={{ color: '#52c41a' }} />
@@ -390,8 +387,8 @@ const Dashboard: React.FC = () => {
                 body: { padding: 24 }
               }}
             >
+              <div style={{ fontSize: 14, color: '#666', marginBottom: 8 }}>旅游收入</div>
               <Statistic
-                title="旅游收入"
                 value={mockData.revenue}
                 suffix="元"
                 prefix={<DollarOutlined style={{ color: '#f5222d' }} />}
@@ -400,7 +397,6 @@ const Dashboard: React.FC = () => {
                   fontSize: 32,
                   fontWeight: 'bold'
                 }}
-                titleStyle={{ fontSize: 14, color: '#666', marginBottom: 8 }}
               />
               <Space size="small" style={{ marginTop: 12 }}>
                 <ArrowUpOutlined style={{ color: '#52c41a' }} />
