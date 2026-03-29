@@ -1,0 +1,265 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 全局标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 16px 0;
+  font-weight: 600;
+  color: #262626;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* 自定义样式 */
+.logo {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1890ff;
+}
+
+/* 登录页面样式 */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.login-form .ant-card-head {
+  background-color: #1890ff;
+  border-radius: 8px 8px 0 0;
+}
+
+.login-form .ant-card-head-title {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-form .ant-form {
+  margin-top: 24px;
+}
+
+.login-form-button {
+  margin-top: 24px;
+}
+
+/* 通用页面样式 */
+.page-container {
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+}
+
+/* 仪表盘样式 */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.dashboard-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+/* 实时监测样式 */
+.realtime-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.realtime-spots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* 历史数据样式 */
+.historical-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 趋势预测样式 */
+.trend-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 景点分析样式 */
+.scenic-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 数据采集样式 */
+.collection-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 用户管理样式 */
+.users-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 系统设置样式 */
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 帮助中心样式 */
+.help-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 16px;
+  }
+  
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-charts {
+    grid-template-columns: 1fr;
+  }
+  
+  .realtime-spots {
+    grid-template-columns: 1fr;
+  }
+  
+  /* 移动端隐藏侧边栏 */
+  .ant-layout-sider {
+    display: none !important;
+  }
+  
+  /* 调整卡片大小 */
+  .ant-card {
+    margin-bottom: 16px;
+  }
+  
+  /* 调整表格大小 */
+  .ant-table {
+    overflow-x: auto;
+  }
+  
+  /* 调整表单大小 */
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+}
+
+/* 加载状态样式 */
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+/* 错误提示样式 */
+.error-container {
+  margin-bottom: 16px;
+}
+
+/* 按钮样式 */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+/* 卡片样式 */
+.stat-card {
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* 图表容器样式 */
+.chart-container {
+  height: 400px;
+  width: 100%;
+}
+
+/* 响应式图表 */
+@media (max-width: 768px) {
+  .chart-container {
+    height: 300px;
+  }
+}

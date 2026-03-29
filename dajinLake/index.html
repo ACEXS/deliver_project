@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大金湖文创特产商城</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/大金湖全景.jpeg" alt="大金湖文创特产商城" style="width: 40px; height: 40px; object-fit: cover;">
+          大金湖文创特产商城
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="products.html">商品列表</a></li>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+          <li>
+            <a href="cart.html" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+          <li>
+            <a href="login.html">
+              <i class="fas fa-user"></i> 登录/注册
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 英雄区域 -->
+  <section class="hero">
+    <div class="container">
+      <h1>大金湖文创特产商城</h1>
+      <p>发现泰宁特色文创产品和地道特产，带走属于大金湖的美好记忆</p>
+      <a href="products.html" class="btn">立即选购</a>
+    </div>
+  </section>
+
+  <!-- 特色商品 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>特色商品</h2>
+        <p>精选大金湖特色文创产品和地道特产</p>
+      </div>
+      <div class="product-grid">
+        <!-- 商品卡片将通过JavaScript动态加载 -->
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="products.html" class="btn btn-primary">查看全部商品</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我们简介 -->
+  <section class="section" style="background-color: var(--secondary-color);">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>关于我们</h2>
+          <p>大金湖文创特产商城是福建省泰宁县近乎旅游经济开发区管委会官方授权的线上销售平台，致力于推广泰宁特色文创产品和地道特产。</p>
+          <p>我们精选当地优质产品，包括文创纪念品、特色食品等，让您在游览大金湖的同时，能够带走一份属于这里的独特记忆。</p>
+          <a href="about.html" class="btn">了解更多</a>
+        </div>
+        <img src="images/大金湖全景.jpeg" alt="大金湖风光" class="about-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系我们 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>联系我们</h2>
+        <p>如有任何问题或建议，欢迎与我们联系</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>联系方式</h3>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>福建省三明市泰宁县大金湖旅游经济开发区</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>0598-1234567</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@dajinlake.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <span>周一至周日 9:00-18:00</span>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>留言咨询</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">姓名</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">邮箱</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">留言内容</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">提交</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/大金湖全景.jpeg" alt="大金湖文创特产商城" style="width: 40px; height: 40px; object-fit: cover;">
+          大金湖文创特产商城
+        </div>
+        <div class="footer-links">
+          <h4>快速链接</h4>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="products.html">商品列表</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>商品分类</h4>
+          <ul>
+            <li><a href="products.html?category=文创产品">文创产品</a></li>
+            <li><a href="products.html?category=特产">特产</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>联系我们</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 福建省三明市泰宁县大金湖旅游经济开发区</p>
+          <p><i class="fas fa-phone"></i> 0598-1234567</p>
+          <p><i class="fas fa-envelope"></i> info@dajinlake.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 大金湖文创特产商城. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

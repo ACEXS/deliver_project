@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泰宁县乡村振兴局 - 后台管理系统</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <div id="login-page" class="page active">
+            <div class="login-container">
+                <div class="login-left">
+                    <div class="login-brand">
+                        <div class="brand-logo">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="url(#grad1)"/>
+                                <path d="M30 70 L50 30 L70 70" stroke="white" stroke-width="4" fill="none"/>
+                                <circle cx="50" cy="45" r="8" fill="white"/>
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1e88e5"/>
+                                        <stop offset="100%" style="stop-color:#1565c0"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h1>泰宁县乡村振兴局</h1>
+                        <p>后台管理系统</p>
+                    </div>
+                </div>
+                <div class="login-right">
+                    <div class="login-form">
+                        <h2>欢迎回来</h2>
+                        <p class="subtitle">请登录您的账户</p>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="username">用户名</label>
+                                <input type="text" id="username" placeholder="请输入用户名" value="admin">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">密码</label>
+                                <input type="password" id="password" placeholder="请输入密码" value="123456">
+                            </div>
+                            <button type="submit" class="btn-primary btn-full">登录</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-layout" class="page">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <div class="brand-mini">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="url(#grad2)"/>
+                            <path d="M30 70 L50 30 L70 70" stroke="white" stroke-width="4" fill="none"/>
+                            <circle cx="50" cy="45" r="8" fill="white"/>
+                            <defs>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1e88e5"/>
+                                    <stop offset="100%" style="stop-color:#1565c0"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="brand-text">乡村振兴局</span>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="#" class="nav-item active" data-page="dashboard">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"/>
+                            <rect x="14" y="3" width="7" height="7"/>
+                            <rect x="14" y="14" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/>
+                        </svg>
+                        <span>首页</span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="products">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <path d="M16 10a4 4 0 0 1-8 0"/>
+                        </svg>
+                        <span>商品管理</span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="orders">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11l3 3L22 4"/>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                        </svg>
+                        <span>订单管理</span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="farmers">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                        <span>农户管理</span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="news">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                        <span>资讯管理</span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="statistics">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="20" x2="12" y2="10"/>
+                            <line x1="18" y1="20" x2="18" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="16"/>
+                        </svg>
+                        <span>数据统计</span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="projects">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                            <polyline points="2 17 12 22 22 17"/>
+                            <polyline points="2 12 12 17 22 12"/>
+                        </svg>
+                        <span>帮扶项目</span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="projectVoting">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                        <span>项目投票</span>
+                    </a>
+                    <a href="#" class="nav-item" data-page="settings">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                        <span>系统设置</span>
+                    </a>
+                </nav>
+                <div class="sidebar-footer">
+                    <a href="#" class="nav-item" id="logoutBtn">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                            <polyline points="16 17 21 12 16 7"/>
+                            <line x1="21" y1="12" x2="9" y2="12"/>
+                        </svg>
+                        <span>退出登录</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <header class="top-header">
+                    <div class="header-left">
+                        <h1 class="page-title" id="pageTitle">首页</h1>
+                    </div>
+                    <div class="header-right">
+                        <div class="user-profile">
+                            <div class="user-avatar">管</div>
+                            <span class="user-name">管理员</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="content-area">
+                    <div id="dashboard-page" class="content-page active">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon blue">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="7" height="7"/>
+                                        <rect x="14" y="3" width="7" height="7"/>
+                                        <rect x="14" y="14" width="7" height="7"/>
+                                        <rect x="3" y="14" width="7" height="7"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>1,234</h3>
+                                    <p>商品总数</p>
+                                </div>
+                                <span class="stat-trend up">+12%</span>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon green">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 11l3 3L22 4"/>
+                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>5,678</h3>
+                                    <p>订单总数</p>
+                                </div>
+                                <span class="stat-trend up">+8%</span>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon orange">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>890</h3>
+                                    <p>农户总数</p>
+                                </div>
+                                <span class="stat-trend up">+5%</span>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon purple">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="1" x2="12" y2="23"/>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>¥234,567</h3>
+                                    <p>销售额</p>
+                                </div>
+                                <span class="stat-trend up">+18%</span>
+                            </div>
+                        </div>
+
+                        <div class="content-grid">
+                            <div class="chart-card">
+                                <div class="card-header">
+                                    <h3>销售趋势</h3>
+                                </div>
+                                <div class="chart-placeholder">
+                                    <svg viewBox="0 0 400 200" class="bar-chart">
+                                        <rect x="50" y="120" width="30" height="80" fill="#1e88e5" rx="4"/>
+                                        <rect x="100" y="100" width="30" height="100" fill="#1e88e5" rx="4"/>
+                                        <rect x="150" y="80" width="30" height="120" fill="#1e88e5" rx="4"/>
+                                        <rect x="200" y="60" width="30" height="140" fill="#42a5f5" rx="4"/>
+                                        <rect x="250" y="50" width="30" height="150" fill="#42a5f5" rx="4"/>
+                                        <rect x="300" y="70" width="30" height="130" fill="#42a5f5" rx="4"/>
+                                        <text x="65" y="190" font-size="10" text-anchor="middle" fill="#666">1月</text>
+                                        <text x="115" y="190" font-size="10" text-anchor="middle" fill="#666">2月</text>
+                                        <text x="165" y="190" font-size="10" text-anchor="middle" fill="#666">3月</text>
+                                        <text x="215" y="190" font-size="10" text-anchor="middle" fill="#666">4月</text>
+                                        <text x="265" y="190" font-size="10" text-anchor="middle" fill="#666">5月</text>
+                                        <text x="315" y="190" font-size="10" text-anchor="middle" fill="#666">6月</text>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="list-card">
+                                <div class="card-header">
+                                    <h3>最新订单</h3>
+                                    <a href="#" class="link-more" data-page="orders">查看全部</a>
+                                </div>
+                                <div class="order-list">
+                                    <div class="order-item">
+                                        <div class="order-info">
+                                            <h4>订单 #20260316001</h4>
+                                    <p>泰宁有机大米 × 5kg</p>
+                                </div>
+                                <span class="order-status success">已完成</span>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-info">
+                                    <h4>订单 #20260316002</h4>
+                                    <p>大金湖有机鱼 × 2条</p>
+                                </div>
+                                <span class="order-status pending">待发货</span>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-info">
+                                    <h4>订单 #20260316003</h4>
+                                    <p>上清酒 × 2瓶</p>
+                                </div>
+                                <span class="order-status shipping">配送中</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="products-page" class="content-page">
+                        <div class="page-header">
+                            <div class="search-bar">
+                                <input type="text" placeholder="搜索商品名称..." class="search-input">
+                                <button class="btn-primary">搜索</button>
+                            </div>
+                            <button class="btn-primary" id="addProductBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                新增商品
+                            </button>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>商品图片</th>
+                                        <th>商品名称</th>
+                                        <th>分类</th>
+                                        <th>价格</th>
+                                        <th>库存</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="productsTableBody">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="orders-page" class="content-page">
+                        <div class="page-header">
+                            <div class="filter-tabs">
+                                <button class="filter-tab active">全部订单</button>
+                                <button class="filter-tab">待付款</button>
+                                <button class="filter-tab">待发货</button>
+                                <button class="filter-tab">配送中</button>
+                                <button class="filter-tab">已完成</button>
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>订单编号</th>
+                                        <th>商品信息</th>
+                                        <th>买家</th>
+                                        <th>金额</th>
+                                        <th>下单时间</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ordersTableBody">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="farmers-page" class="content-page">
+                        <div class="page-header">
+                            <div class="search-bar">
+                                <input type="text" placeholder="搜索农户姓名..." class="search-input">
+                                <button class="btn-primary">搜索</button>
+                            </div>
+                            <button class="btn-primary" id="addFarmerBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                新增农户
+                            </button>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>农户编号</th>
+                                        <th>姓名</th>
+                                        <th>联系电话</th>
+                                        <th>所在村庄</th>
+                                        <th>主营产品</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="farmersTableBody">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="news-page" class="content-page">
+                        <div class="page-header">
+                            <button class="btn-primary" id="addNewsBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                发布资讯
+                            </button>
+                        </div>
+                        <div class="news-grid">
+                            <div class="news-card">
+                                <div class="news-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                                <div class="news-content">
+                                    <span class="news-tag">政策通知</span>
+                                    <h3>泰宁县2026年乡村振兴补助政策发布</h3>
+                                    <p class="news-desc">为进一步推进乡村振兴工作，泰宁县发布了2024年度最新的农业补助政策...</p>
+                                    <div class="news-meta">
+                                        <span>2026-03-15</span>
+                                        <span>阅读 1,234</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="news-image" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);"></div>
+                                <div class="news-content">
+                                    <span class="news-tag">工作动态</span>
+                                    <h3>大金湖有机鱼养殖基地喜获丰收</h3>
+                                    <p class="news-desc">我县大金湖有机鱼养殖基地今年产量再创新高，预计产值达3000万元...</p>
+                                    <div class="news-meta">
+                                        <span>2026-03-14</span>
+                                        <span>阅读 987</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="news-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                                <div class="news-content">
+                                    <span class="news-tag">培训信息</span>
+                                    <h3>农村电商技能培训班即将开班</h3>
+                                    <p class="news-desc">为帮助农户拓宽销售渠道，县农业农村局将举办免费电商技能培训班...</p>
+                                    <div class="news-meta">
+                                        <span>2026-03-13</span>
+                                        <span>阅读 756</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="statistics-page" class="content-page">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon blue">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="7" height="7"/>
+                                        <rect x="14" y="3" width="7" height="7"/>
+                                        <rect x="14" y="14" width="7" height="7"/>
+                                        <rect x="3" y="14" width="7" height="7"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>1,234</h3>
+                                    <p>商品总数</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon green">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 11l3 3L22 4"/>
+                                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>5,678</h3>
+                                    <p>订单总数</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon orange">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>890</h3>
+                                    <p>农户总数</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon purple">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="1" x2="12" y2="23"/>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>¥234,567</h3>
+                                    <p>销售额</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-grid">
+                            <div class="chart-card">
+                                <div class="card-header">
+                                    <h3>月度销售趋势</h3>
+                                </div>
+                                <div class="chart-placeholder">
+                                    <svg viewBox="0 0 400 200" class="line-chart">
+                                        <polyline points="50,150 100,120 150,130 200,90 250,100 300,70 350,80" fill="none" stroke="#1e88e5" stroke-width="3"/>
+                                        <circle cx="50" cy="150" r="4" fill="#1e88e5"/>
+                                        <circle cx="100" cy="120" r="4" fill="#1e88e5"/>
+                                        <circle cx="150" cy="130" r="4" fill="#1e88e5"/>
+                                        <circle cx="200" cy="90" r="4" fill="#1e88e5"/>
+                                        <circle cx="250" cy="100" r="4" fill="#1e88e5"/>
+                                        <circle cx="300" cy="70" r="4" fill="#1e88e5"/>
+                                        <circle cx="350" cy="80" r="4" fill="#1e88e5"/>
+                                        <text x="50" y="190" font-size="10" text-anchor="middle" fill="#666">1月</text>
+                                        <text x="100" y="190" font-size="10" text-anchor="middle" fill="#666">2月</text>
+                                        <text x="150" y="190" font-size="10" text-anchor="middle" fill="#666">3月</text>
+                                        <text x="200" y="190" font-size="10" text-anchor="middle" fill="#666">4月</text>
+                                        <text x="250" y="190" font-size="10" text-anchor="middle" fill="#666">5月</text>
+                                        <text x="300" y="190" font-size="10" text-anchor="middle" fill="#666">6月</text>
+                                        <text x="350" y="190" font-size="10" text-anchor="middle" fill="#666">7月</text>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="chart-card">
+                                <div class="card-header">
+                                    <h3>商品分类占比</h3>
+                                </div>
+                                <div class="chart-placeholder">
+                                    <svg viewBox="0 0 200 200" class="pie-chart">
+                                        <circle cx="100" cy="100" r="80" fill="#e3f2fd"/>
+                                        <path d="M100,100 L100,20 A80,80 0 0,1 180,100 Z" fill="#1e88e5"/>
+                                        <path d="M100,100 L180,100 A80,80 0 0,1 100,180 Z" fill="#42a5f5"/>
+                                        <path d="M100,100 L100,180 A80,80 0 0,1 20,100 Z" fill="#90caf9"/>
+                                        <circle cx="100" cy="100" r="50" fill="white"/>
+                                    </svg>
+                                    <div class="pie-legend">
+                                        <div class="legend-item"><span class="legend-dot" style="background:#1e88e5"></span>粮食类 35%</div>
+                                        <div class="legend-item"><span class="legend-dot" style="background:#42a5f5"></span>水产类 30%</div>
+                                        <div class="legend-item"><span class="legend-dot" style="background:#90caf9"></span>畜禽类 20%</div>
+                                        <div class="legend-item"><span class="legend-dot" style="background:#e3f2fd"></span>其他 15%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="projects-page" class="content-page">
+                        <div class="page-header">
+                            <button class="btn-primary" id="addProjectBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                新增项目
+                            </button>
+                        </div>
+                        <div class="projects-grid" id="projectsGrid">
+                        </div>
+                    </div>
+
+                    <div id="projectVoting-page" class="content-page">
+                        <div class="page-header">
+                            <h3>帮扶项目投票</h3>
+                            <p class="page-description">请选择您认为应该优先实施的帮扶项目</p>
+                        </div>
+                        <div class="voting-container">
+                            <div class="voting-card">
+                                <div class="voting-header">
+                                    <h3>泰宁县有机大米种植基地建设</h3>
+                                    <span class="voting-budget">预算: ¥500,000</span>
+                                </div>
+                                <p class="voting-desc">建设500亩有机大米种植基地，配备现代化灌溉设施和病虫害防治系统，提高大米产量和品质。</p>
+                                <div class="voting-meta">
+                                    <span>开始日期: 2026-01-01</span>
+                                    <span>截止日期: 2026-12-31</span>
+                                </div>
+                                <div class="voting-actions">
+                                    <button class="btn-primary vote-btn" data-project-id="P001">投票支持</button>
+                                    <span class="vote-count">已获得 <strong>15</strong> 票</span>
+                                </div>
+                            </div>
+                            <div class="voting-card">
+                                <div class="voting-header">
+                                    <h3>大金湖有机鱼养殖项目</h3>
+                                    <span class="voting-budget">预算: ¥350,000</span>
+                                </div>
+                                <p class="voting-desc">在大金湖周边建设200亩有机鱼养殖基地，推广生态养殖技术，提高渔民收入。</p>
+                                <div class="voting-meta">
+                                    <span>开始日期: 2026-02-01</span>
+                                    <span>截止日期: 2026-11-30</span>
+                                </div>
+                                <div class="voting-actions">
+                                    <button class="btn-primary vote-btn" data-project-id="P002">投票支持</button>
+                                    <span class="vote-count">已获得 <strong>12</strong> 票</span>
+                                </div>
+                            </div>
+                            <div class="voting-card">
+                                <div class="voting-header">
+                                    <h3>泰宁红茶产业升级</h3>
+                                    <span class="voting-budget">预算: ¥420,000</span>
+                                </div>
+                                <p class="voting-desc">升级改造红茶加工厂，引进先进加工设备，提高产品质量和产量，打造泰宁红茶品牌。</p>
+                                <div class="voting-meta">
+                                    <span>开始日期: 2026-03-01</span>
+                                    <span>截止日期: 2026-10-31</span>
+                                </div>
+                                <div class="voting-actions">
+                                    <button class="btn-primary vote-btn" data-project-id="P003">投票支持</button>
+                                    <span class="vote-count">已获得 <strong>18</strong> 票</span>
+                                </div>
+                            </div>
+                            <div class="voting-card">
+                                <div class="voting-header">
+                                    <h3>泰宁铁皮石斛种植基地</h3>
+                                    <span class="voting-budget">预算: ¥600,000</span>
+                                </div>
+                                <p class="voting-desc">建设100亩铁皮石斛种植基地，采用现代化温室大棚技术，发展特色中药材产业。</p>
+                                <div class="voting-meta">
+                                    <span>开始日期: 2026-01-15</span>
+                                    <span>截止日期: 2026-12-31</span>
+                                </div>
+                                <div class="voting-actions">
+                                    <button class="btn-primary vote-btn" data-project-id="P004">投票支持</button>
+                                    <span class="vote-count">已获得 <strong>9</strong> 票</span>
+                                </div>
+                            </div>
+                            <div class="voting-card">
+                                <div class="voting-header">
+                                    <h3>泰宁锥栗产业发展项目</h3>
+                                    <span class="voting-budget">预算: ¥300,000</span>
+                                </div>
+                                <p class="voting-desc">建设锥栗种植基地，推广高产品种和科学种植技术，提高锥栗产量和品质。</p>
+                                <div class="voting-meta">
+                                    <span>开始日期: 2026-02-15</span>
+                                    <span>截止日期: 2026-12-31</span>
+                                </div>
+                                <div class="voting-actions">
+                                    <button class="btn-primary vote-btn" data-project-id="P005">投票支持</button>
+                                    <span class="vote-count">已获得 <strong>11</strong> 票</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="voting-results">
+                            <h3>投票结果</h3>
+                            <div class="results-chart">
+                                <div class="result-item">
+                                    <span class="result-name">泰宁红茶产业升级</span>
+                                    <div class="result-bar">
+                                        <div class="result-fill" style="width: 36%;"></div>
+                                    </div>
+                                    <span class="result-percent">36%</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-name">泰宁县有机大米种植基地建设</span>
+                                    <div class="result-bar">
+                                        <div class="result-fill" style="width: 30%;"></div>
+                                    </div>
+                                    <span class="result-percent">30%</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-name">大金湖有机鱼养殖项目</span>
+                                    <div class="result-bar">
+                                        <div class="result-fill" style="width: 24%;"></div>
+                                    </div>
+                                    <span class="result-percent">24%</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-name">泰宁锥栗产业发展项目</span>
+                                    <div class="result-bar">
+                                        <div class="result-fill" style="width: 22%;"></div>
+                                    </div>
+                                    <span class="result-percent">22%</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-name">泰宁铁皮石斛种植基地</span>
+                                    <div class="result-bar">
+                                        <div class="result-fill" style="width: 18%;"></div>
+                                    </div>
+                                    <span class="result-percent">18%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="settings-page" class="content-page">
+                        <div class="settings-container">
+                            <div class="settings-card">
+                                <h3>基本设置</h3>
+                                <div class="form-group">
+                                    <label>系统名称</label>
+                                    <input type="text" value="泰宁县乡村振兴局后台管理系统">
+                                </div>
+                                <div class="form-group">
+                                    <label>联系电话</label>
+                                    <input type="text" value="0598-1234567">
+                                </div>
+                                <div class="form-group">
+                                    <label>单位地址</label>
+                                    <input type="text" value="福建省三明市泰宁县和平中街25号">
+                                </div>
+                                <button class="btn-primary">保存设置</button>
+                            </div>
+                            <div class="settings-card">
+                                <h3>安全设置</h3>
+                                <div class="form-group">
+                                    <label>当前密码</label>
+                                    <input type="password" placeholder="请输入当前密码">
+                                </div>
+                                <div class="form-group">
+                                    <label>新密码</label>
+                                    <input type="password" placeholder="请输入新密码">
+                                </div>
+                                <div class="form-group">
+                                    <label>确认新密码</label>
+                                    <input type="password" placeholder="请再次输入新密码">
+                                </div>
+                                <button class="btn-primary">修改密码</button>
+                            </div>
+                            <div class="settings-card">
+                                <h3>通知设置</h3>
+                                <div class="setting-item">
+                                    <span>新订单通知</span>
+                                    <div class="toggle-switch active"></div>
+                                </div>
+                                <div class="setting-item">
+                                    <span>库存预警</span>
+                                    <div class="toggle-switch active"></div>
+                                </div>
+                                <div class="setting-item">
+                                    <span>系统公告</span>
+                                    <div class="toggle-switch"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modalTitle">新增</h3>
+                    <button class="modal-close" id="modalClose">&times;</button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-secondary" id="modalCancel">取消</button>
+                    <button class="btn-primary" id="modalConfirm">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

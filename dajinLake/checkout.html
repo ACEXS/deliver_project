@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>结算 - 大金湖文创特产商城</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/大金湖全景.jpeg" alt="大金湖文创特产商城" style="width: 40px; height: 40px; object-fit: cover;">
+          大金湖文创特产商城
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="products.html">商品列表</a></li>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+          <li>
+            <a href="cart.html" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+          <li>
+            <a href="login.html">
+              <i class="fas fa-user"></i> 登录/注册
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 面包屑导航 -->
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="cart.html">购物车</a></li>
+      <li class="active">结算</li>
+    </ul>
+  </div>
+
+  <!-- 结算内容 -->
+  <section class="section">
+    <div class="container">
+      <div class="checkout-container">
+        <h2>结算</h2>
+        
+        <form id="checkout-form" class="checkout-form">
+          <div>
+            <h3>收货信息</h3>
+            <div class="form-group">
+              <label for="fullname">姓名</label>
+              <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">手机号</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="address">地址</label>
+              <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+              <label for="city">城市</label>
+              <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+              <label for="zipcode">邮编</label>
+              <input type="text" id="zipcode" name="zipcode" required>
+            </div>
+          </div>
+          
+          <div>
+            <h3>支付方式</h3>
+            <div class="form-group">
+              <label>
+                <input type="radio" name="payment" value="wechat" checked>
+                微信支付
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="radio" name="payment" value="alipay">
+                支付宝
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="radio" name="payment" value="creditcard">
+                信用卡
+              </label>
+            </div>
+            
+            <div class="checkout-summary">
+              <h3>订单摘要</h3>
+              <div class="summary-item">
+                <span>商品总价</span>
+                <span id="subtotal">¥0.00</span>
+              </div>
+              <div class="summary-item">
+                <span>运费</span>
+                <span>¥0.00</span>
+              </div>
+              <div class="summary-total">
+                <span>总计</span>
+                <span id="total">¥0.00</span>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">提交订单</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/大金湖全景.jpeg" alt="大金湖文创特产商城" style="width: 40px; height: 40px; object-fit: cover;">
+          大金湖文创特产商城
+        </div>
+        <div class="footer-links">
+          <h4>快速链接</h4>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="products.html">商品列表</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>商品分类</h4>
+          <ul>
+            <li><a href="products.html?category=文创产品">文创产品</a></li>
+            <li><a href="products.html?category=特产">特产</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>联系我们</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 福建省三明市泰宁县大金湖旅游经济开发区</p>
+          <p><i class="fas fa-phone"></i> 0598-1234567</p>
+          <p><i class="fas fa-envelope"></i> info@dajinlake.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 大金湖文创特产商城. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // 加载订单摘要
+    function loadOrderSummary() {
+      // 从本地存储获取购物车数据
+      const storedCart = localStorage.getItem('cart');
+      if (storedCart) {
+        const cart = JSON.parse(storedCart);
+        
+        // 计算商品总价
+        const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+        const total = subtotal; // 暂时免运费
+        
+        // 更新页面显示
+        document.getElementById('subtotal').textContent = `¥${subtotal.toFixed(2)}`;
+        document.getElementById('total').textContent = `¥${total.toFixed(2)}`;
+      }
+    }
+    
+    // 页面加载完成后执行
+    document.addEventListener('DOMContentLoaded', function() {
+      loadOrderSummary();
+    });
+  </script>
+</body>
+</html>

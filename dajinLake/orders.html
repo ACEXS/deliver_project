@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的订单 - 大金湖文创特产商城</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/大金湖全景.jpeg" alt="大金湖文创特产商城" style="width: 40px; height: 40px; object-fit: cover;">
+          大金湖文创特产商城
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="products.html">商品列表</a></li>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+          <li>
+            <a href="cart.html" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <i class="fas fa-user"></i> 个人中心
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 我的订单 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>我的订单</h2>
+        <p>查看您的订单历史</p>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: 200px 1fr; gap: 2rem;">
+        <!-- 侧边栏 -->
+        <div style="background-color: white; padding: 1.5rem; border-radius: 8px; box-shadow: var(--shadow);">
+          <h3 style="margin-bottom: 1.5rem; color: var(--dark-color);">个人中心</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 1rem;">
+              <a href="profile.html" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center;">
+                <i class="fas fa-user-circle" style="margin-right: 10px;"></i> 个人信息
+              </a>
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <a href="address.html" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center;">
+                <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 地址管理
+              </a>
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <a href="orders.html" style="color: var(--primary-color); text-decoration: none; display: flex; align-items: center;">
+                <i class="fas fa-box" style="margin-right: 10px;"></i> 我的订单
+              </a>
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <a href="login.html" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center;">
+                <i class="fas fa-sign-out-alt" style="margin-right: 10px;"></i> 退出登录
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- 主内容 -->
+        <div style="background-color: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow);">
+          <!-- 订单筛选 -->
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <button class="btn btn-primary">全部订单</button>
+            <button class="btn">待支付</button>
+            <button class="btn">待发货</button>
+            <button class="btn">待收货</button>
+            <button class="btn">已完成</button>
+          </div>
+          
+          <!-- 订单1 -->
+          <div style="border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 2rem;">
+            <div style="background-color: var(--light-color); padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between;">
+              <div>订单号: 20260323001</div>
+              <div style="color: var(--primary-color);">待支付</div>
+            </div>
+            <div style="padding: 1.5rem;">
+              <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=beautiful%20postcard%20set%20with%20lake%20scenery%2C%20blue%20water%2C%20mountains%2C%20tourism%20souvenir&image_size=square_hd" alt="大金湖特色明信片套装" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px;">
+                <div>
+                  <h4 style="margin-bottom: 0.5rem;">大金湖特色明信片套装</h4>
+                  <p style="margin-bottom: 0.5rem; color: #6c757d;">¥38.00 x 1</p>
+                </div>
+              </div>
+              <div style="display: flex; justify-content: flex-end; align-items: center; gap: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+                <div>总计: <span style="font-weight: bold; color: var(--primary-color);">¥38.00</span></div>
+                <button class="btn btn-primary">去支付</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 订单2 -->
+          <div style="border: 1px solid var(--border-color); border-radius: 8px; margin-bottom: 2rem;">
+            <div style="background-color: var(--light-color); padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between;">
+              <div>订单号: 20260322001</div>
+              <div style="color: #28a745;">已完成</div>
+            </div>
+            <div style="padding: 1.5rem;">
+              <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=premium%20tea%20gift%20box%2C%20traditional%20chinese%20packaging%2C%20tea%20leaves%2C%20souvenir&image_size=square_hd" alt="泰宁岩茶礼盒装" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px;">
+                <div>
+                  <h4 style="margin-bottom: 0.5rem;">泰宁岩茶礼盒装</h4>
+                  <p style="margin-bottom: 0.5rem; color: #6c757d;">¥128.00 x 1</p>
+                </div>
+              </div>
+              <div style="display: flex; justify-content: flex-end; align-items: center; gap: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+                <div>总计: <span style="font-weight: bold; color: var(--primary-color);">¥128.00</span></div>
+                <button class="btn">查看详情</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/大金湖全景.jpeg" alt="大金湖文创特产商城" style="width: 40px; height: 40px; object-fit: cover;">
+          大金湖文创特产商城
+        </div>
+        <div class="footer-links">
+          <h4>快速链接</h4>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="products.html">商品列表</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>商品分类</h4>
+          <ul>
+            <li><a href="products.html?category=文创产品">文创产品</a></li>
+            <li><a href="products.html?category=特产">特产</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>联系我们</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 福建省三明市泰宁县大金湖旅游经济开发区</p>
+          <p><i class="fas fa-phone"></i> 0598-1234567</p>
+          <p><i class="fas fa-envelope"></i> info@dajinlake.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 大金湖文创特产商城. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

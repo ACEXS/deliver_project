@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册 - 大金湖文创特产商城</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/大金湖全景.jpeg" alt="大金湖文创特产商城" style="width: 40px; height: 40px; object-fit: cover;">
+          大金湖文创特产商城
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="products.html">商品列表</a></li>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+          <li>
+            <a href="cart.html" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 注册页面 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>用户注册</h2>
+        <p>创建您的账号</p>
+      </div>
+      
+      <div style="max-width: 500px; margin: 0 auto; background-color: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow);">
+        <form id="register-form">
+          <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">确认密码</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+          </div>
+          <div style="margin-bottom: 2rem;">
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">我已阅读并同意 <a href="#" style="color: var(--primary-color); text-decoration: none;">用户协议</a> 和 <a href="#" style="color: var(--primary-color); text-decoration: none;">隐私政策</a></label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">注册</button>
+          <div style="text-align: center; margin-top: 1rem;">
+            <p>已有账号？ <a href="login.html" style="color: var(--primary-color); text-decoration: none;">立即登录</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/大金湖全景.jpeg" alt="大金湖文创特产商城" style="width: 40px; height: 40px; object-fit: cover;">
+          大金湖文创特产商城
+        </div>
+        <div class="footer-links">
+          <h4>快速链接</h4>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="products.html">商品列表</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>商品分类</h4>
+          <ul>
+            <li><a href="products.html?category=文创产品">文创产品</a></li>
+            <li><a href="products.html?category=特产">特产</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>联系我们</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 福建省三明市泰宁县大金湖旅游经济开发区</p>
+          <p><i class="fas fa-phone"></i> 0598-1234567</p>
+          <p><i class="fas fa-envelope"></i> info@dajinlake.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 大金湖文创特产商城. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // 注册表单提交
+    document.getElementById('register-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const username = document.getElementById('username').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+      
+      // 验证密码
+      if (password !== confirmPassword) {
+        alert('两次输入的密码不一致');
+        return;
+      }
+      
+      // 模拟注册
+      if (username && email && password) {
+        alert('注册成功！');
+        // 实际项目中这里会发送注册请求
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
+</body>
+</html>

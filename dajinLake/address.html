@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>地址管理 - 大金湖文创特产商城</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="images/大金湖全景.jpeg" alt="大金湖文创特产商城" style="width: 40px; height: 40px; object-fit: cover;">
+          大金湖文创特产商城
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="products.html">商品列表</a></li>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+          <li>
+            <a href="cart.html" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <i class="fas fa-user"></i> 个人中心
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 地址管理 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>地址管理</h2>
+        <p>管理您的收货地址</p>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: 200px 1fr; gap: 2rem;">
+        <!-- 侧边栏 -->
+        <div style="background-color: white; padding: 1.5rem; border-radius: 8px; box-shadow: var(--shadow);">
+          <h3 style="margin-bottom: 1.5rem; color: var(--dark-color);">个人中心</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 1rem;">
+              <a href="profile.html" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center;">
+                <i class="fas fa-user-circle" style="margin-right: 10px;"></i> 个人信息
+              </a>
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <a href="address.html" style="color: var(--primary-color); text-decoration: none; display: flex; align-items: center;">
+                <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 地址管理
+              </a>
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <a href="orders.html" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center;">
+                <i class="fas fa-box" style="margin-right: 10px;"></i> 我的订单
+              </a>
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <a href="login.html" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center;">
+                <i class="fas fa-sign-out-alt" style="margin-right: 10px;"></i> 退出登录
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- 主内容 -->
+        <div>
+          <!-- 添加新地址 -->
+          <div style="background-color: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow); margin-bottom: 2rem;">
+            <h3 style="margin-bottom: 2rem; color: var(--dark-color);">添加新地址</h3>
+            <form id="address-form">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                <div class="form-group">
+                  <label for="name">收货人</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">手机号</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="province">省份</label>
+                <input type="text" id="province" name="province" required>
+              </div>
+              <div class="form-group">
+                <label for="city">城市</label>
+                <input type="text" id="city" name="city" required>
+              </div>
+              <div class="form-group">
+                <label for="district">区县</label>
+                <input type="text" id="district" name="district" required>
+              </div>
+              <div class="form-group">
+                <label for="address">详细地址</label>
+                <input type="text" id="address" name="address" required>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="default" name="default">
+                <label for="default">设为默认地址</label>
+              </div>
+              <button type="submit" class="btn btn-primary">保存地址</button>
+            </form>
+          </div>
+          
+          <!-- 现有地址 -->
+          <div style="background-color: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow);">
+            <h3 style="margin-bottom: 2rem; color: var(--dark-color);">现有地址</h3>
+            
+            <!-- 地址1 -->
+            <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                <div>
+                  <h4 style="margin-bottom: 0.5rem;">测试用户 <span style="color: var(--primary-color); font-size: 0.9rem;">(默认)</span></h4>
+                  <p style="margin-bottom: 0.5rem;">13800138000</p>
+                  <p>福建省三明市泰宁县金湖路123号</p>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                  <button class="btn" style="padding: 0.5rem 1rem;">编辑</button>
+                  <button class="btn" style="padding: 0.5rem 1rem; background-color: #dc3545; color: white;">删除</button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 地址2 -->
+            <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                <div>
+                  <h4 style="margin-bottom: 0.5rem;">张三</h4>
+                  <p style="margin-bottom: 0.5rem;">13900139000</p>
+                  <p>福建省福州市鼓楼区五四路456号</p>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                  <button class="btn" style="padding: 0.5rem 1rem;">编辑</button>
+                  <button class="btn" style="padding: 0.5rem 1rem; background-color: #dc3545; color: white;">删除</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/大金湖全景.jpeg" alt="大金湖文创特产商城" style="width: 40px; height: 40px; object-fit: cover;">
+          大金湖文创特产商城
+        </div>
+        <div class="footer-links">
+          <h4>快速链接</h4>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="products.html">商品列表</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>商品分类</h4>
+          <ul>
+            <li><a href="products.html?category=文创产品">文创产品</a></li>
+            <li><a href="products.html?category=特产">特产</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>联系我们</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 福建省三明市泰宁县大金湖旅游经济开发区</p>
+          <p><i class="fas fa-phone"></i> 0598-1234567</p>
+          <p><i class="fas fa-envelope"></i> info@dajinlake.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 大金湖文创特产商城. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // 地址表单提交
+    document.getElementById('address-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('地址保存成功！');
+      // 实际项目中这里会发送保存请求
+    });
+  </script>
+</body>
+</html>
