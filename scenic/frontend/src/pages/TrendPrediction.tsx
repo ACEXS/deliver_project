@@ -14,13 +14,13 @@ const TrendPrediction: React.FC = () => {
 
   // 模拟预测数据
   const mockData: PredictionData[] = [
-    { date: '2026-02-09', predictedVisitors: 3800, confidence: 0.85 },
-    { date: '2026-02-10', predictedVisitors: 4200, confidence: 0.82 },
-    { date: '2026-02-11', predictedVisitors: 4800, confidence: 0.80 },
-    { date: '2026-02-12', predictedVisitors: 5500, confidence: 0.78 },
-    { date: '2026-02-13', predictedVisitors: 6200, confidence: 0.75 },
-    { date: '2026-02-14', predictedVisitors: 5800, confidence: 0.73 },
-    { date: '2026-02-15', predictedVisitors: 4500, confidence: 0.70 },
+    { date: '2026-03-27', predictedVisitors: 3800, confidence: 0.85 },
+    { date: '2026-03-28', predictedVisitors: 4200, confidence: 0.82 },
+    { date: '2026-03-29', predictedVisitors: 4800, confidence: 0.80 },
+    { date: '2026-03-30', predictedVisitors: 5500, confidence: 0.78 },
+    { date: '2026-03-31', predictedVisitors: 6200, confidence: 0.75 },
+    { date: '2026-04-01', predictedVisitors: 5800, confidence: 0.73 },
+    { date: '2026-04-02', predictedVisitors: 4500, confidence: 0.70 },
   ]
 
   useEffect(() => {

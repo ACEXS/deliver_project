@@ -52,7 +52,7 @@ const doc = new Document({
       new Paragraph({ children: [new TextRun({ text: "产品使用说明书", bold: true, size: 36 })], alignment: AlignmentType.CENTER }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
       new Paragraph({ children: [new TextRun({ text: "版本：V1.0" })] }),
-      new Paragraph({ children: [new TextRun({ text: "日期：2026年2月" })] }),
+      new Paragraph({ children: [new TextRun({ text: "日期：2026年3月" })] }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
       
       // 目录
@@ -108,7 +108,7 @@ const doc = new Document({
       new Paragraph({ numbering: { reference: "bullets", level: 0 },
         children: [new TextRun("登录失败提示")] }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
-      new Paragraph({ children: [new ImageRun({ type: "png", data: fs.readFileSync("f:\\Technology\\Code\\Trae\\Scenic\\image\\login_page_full-2026-02-07T20-21-33-296Z.png"), transformation: { width: 600, height: 400 } })] }),
+      new Paragraph({ children: [new ImageRun({ type: "png", data: fs.readFileSync("f:\\Technology\\Code\\Trae\\Scenic\\image\\login_page_full-2026-03-27T20-21-33-296Z.png"), transformation: { width: 600, height: 400 } })] }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
       
       // 2.2 仪表盘页面
@@ -122,7 +122,7 @@ const doc = new Document({
       new Paragraph({ numbering: { reference: "bullets", level: 0 },
         children: [new TextRun("关键数据可视化")] }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
-      new Paragraph({ children: [new ImageRun({ type: "png", data: fs.readFileSync("f:\\Technology\\Code\\Trae\\Scenic\\image\\dashboard_full-2026-02-07T20-22-37-766Z.png"), transformation: { width: 700, height: 500 } })] }),
+      new Paragraph({ children: [new ImageRun({ type: "png", data: fs.readFileSync("f:\\Technology\\Code\\Trae\\Scenic\\image\\dashboard_full-2026-03-27T20-22-37-766Z.png"), transformation: { width: 700, height: 500 } })] }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
       
       // 2.3 实时监控页面
@@ -154,7 +154,7 @@ const doc = new Document({
       new Paragraph({ numbering: { reference: "bullets", level: 0 },
         children: [new TextRun("历史趋势分析")] }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
-      new Paragraph({ children: [new ImageRun({ type: "png", data: fs.readFileSync("f:\\Technology\\Code\\Trae\\Scenic\\image\\historical_data_full-2026-02-07T20-22-54-917Z.png"), transformation: { width: 700, height: 500 } })] }),
+      new Paragraph({ children: [new ImageRun({ type: "png", data: fs.readFileSync("f:\\Technology\\Code\\Trae\\Scenic\\image\\historical_data_full-2026-03-27T20-22-54-917Z.png"), transformation: { width: 700, height: 500 } })] }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
       
       // 2.5 趋势预测页面
@@ -168,7 +168,7 @@ const doc = new Document({
       new Paragraph({ numbering: { reference: "bullets", level: 0 },
         children: [new TextRun("预测准确度评估")] }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
-      new Paragraph({ children: [new ImageRun({ type: "png", data: fs.readFileSync("f:\\Technology\\Code\\Trae\\Scenic\\image\\trend_prediction_full_correct-2026-02-07T20-26-29-090Z.png"), transformation: { width: 700, height: 500 } })] }),
+      new Paragraph({ children: [new ImageRun({ type: "png", data: fs.readFileSync("f:\\Technology\\Code\\Trae\\Scenic\\image\\trend_prediction_full_correct-2026-03-27T20-26-29-090Z.png"), transformation: { width: 700, height: 500 } })] }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
       
       // 2.6 景点分析页面
@@ -182,7 +182,7 @@ const doc = new Document({
       new Paragraph({ numbering: { reference: "bullets", level: 0 },
         children: [new TextRun("多维度数据展示")] }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
-      new Paragraph({ children: [new ImageRun({ type: "png", data: fs.readFileSync("f:\\Technology\\Code\\Trae\\Scenic\\image\\scenic_analysis_full-2026-02-07T20-23-29-183Z.png"), transformation: { width: 700, height: 500 } })] }),
+      new Paragraph({ children: [new ImageRun({ type: "png", data: fs.readFileSync("f:\\Technology\\Code\\Trae\\Scenic\\image\\scenic_analysis_full-2026-03-27T20-23-29-183Z.png"), transformation: { width: 700, height: 500 } })] }),
       new Paragraph({ children: [new TextRun({ text: "\n" })] }),
       
       // 3. 操作指南

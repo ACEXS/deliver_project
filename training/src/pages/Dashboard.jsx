@@ -43,7 +43,7 @@ const Dashboard = ({ onLogout }) => {
     {
       id: 1,
       title: '习近平新时代中国特色社会主义思想专题培训',
-      date: '2026-02-01',
+      date: '2026-03-27',
       students: 45,
       status: '已完成',
       statusColor: 'text-green-600',
@@ -51,7 +51,7 @@ const Dashboard = ({ onLogout }) => {
     {
       id: 2,
       title: '党史学习教育专题讲座',
-      date: '2026-02-03',
+      date: '2026-03-28',
       students: 38,
       status: '已完成',
       statusColor: 'text-green-600',
@@ -59,7 +59,7 @@ const Dashboard = ({ onLogout }) => {
     {
       id: 3,
       title: '党风廉政建设专题培训',
-      date: '2026-02-05',
+      date: '2026-03-29',
       students: 52,
       status: '进行中',
       statusColor: 'text-blue-600',
@@ -67,7 +67,7 @@ const Dashboard = ({ onLogout }) => {
     {
       id: 4,
       title: '乡村振兴战略专题研讨',
-      date: '2026-02-08',
+      date: '2026-03-30',
       students: 41,
       status: '未开始',
       statusColor: 'text-gray-600',
@@ -100,7 +100,7 @@ const Dashboard = ({ onLogout }) => {
         <div className="flex items-center justify-between">
           <h1 className="text-xl font-bold text-secondary-800">仪表盘</h1>
           <div className="flex items-center gap-2">
-            <span className="text-sm text-secondary-500">今日: 2026-02-08</span>
+            <span className="text-sm text-secondary-500">今日: 2026-03-29</span>
           </div>
         </div>
 

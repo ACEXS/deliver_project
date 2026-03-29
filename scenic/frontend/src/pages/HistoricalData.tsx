@@ -21,26 +21,26 @@ const HistoricalData: React.FC = () => {
   ])
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState<HistoricalDataItem[]>([
-    { date: '2026-02-01', totalVisitors: 2800, changeRate: 2.5, avgStayTime: 110, revenue: 350000 },
-    { date: '2026-02-02', totalVisitors: 3200, changeRate: 14.3, avgStayTime: 115, revenue: 400000 },
-    { date: '2026-02-03', totalVisitors: 4500, changeRate: 40.6, avgStayTime: 120, revenue: 560000 },
-    { date: '2026-02-04', totalVisitors: 5200, changeRate: 15.6, avgStayTime: 125, revenue: 650000 },
-    { date: '2026-02-05', totalVisitors: 6800, changeRate: 30.8, avgStayTime: 130, revenue: 850000 },
-    { date: '2026-02-06', totalVisitors: 7200, changeRate: 5.9, avgStayTime: 135, revenue: 900000 },
-    { date: '2026-02-07', totalVisitors: 6500, changeRate: -9.7, avgStayTime: 125, revenue: 810000 },
-    { date: '2026-02-08', totalVisitors: 3456, changeRate: -46.8, avgStayTime: 120, revenue: 430000 },
+    { date: '2026-03-20', totalVisitors: 2800, changeRate: 2.5, avgStayTime: 110, revenue: 350000 },
+    { date: '2026-03-21', totalVisitors: 3200, changeRate: 14.3, avgStayTime: 115, revenue: 400000 },
+    { date: '2026-03-22', totalVisitors: 4500, changeRate: 40.6, avgStayTime: 120, revenue: 560000 },
+    { date: '2026-03-23', totalVisitors: 5200, changeRate: 15.6, avgStayTime: 125, revenue: 650000 },
+    { date: '2026-03-24', totalVisitors: 6800, changeRate: 30.8, avgStayTime: 130, revenue: 850000 },
+    { date: '2026-03-25', totalVisitors: 7200, changeRate: 5.9, avgStayTime: 135, revenue: 900000 },
+    { date: '2026-03-26', totalVisitors: 6500, changeRate: -9.7, avgStayTime: 125, revenue: 810000 },
+    { date: '2026-03-27', totalVisitors: 3456, changeRate: -46.8, avgStayTime: 120, revenue: 430000 },
   ])
 
   // 模拟数据
   const mockData: HistoricalDataItem[] = [
-    { date: '2026-02-01', totalVisitors: 2800, changeRate: 2.5, avgStayTime: 110, revenue: 350000 },
-    { date: '2026-02-02', totalVisitors: 3200, changeRate: 14.3, avgStayTime: 115, revenue: 400000 },
-    { date: '2026-02-03', totalVisitors: 4500, changeRate: 40.6, avgStayTime: 120, revenue: 560000 },
-    { date: '2026-02-04', totalVisitors: 5200, changeRate: 15.6, avgStayTime: 125, revenue: 650000 },
-    { date: '2026-02-05', totalVisitors: 6800, changeRate: 30.8, avgStayTime: 130, revenue: 850000 },
-    { date: '2026-02-06', totalVisitors: 7200, changeRate: 5.9, avgStayTime: 135, revenue: 900000 },
-    { date: '2026-02-07', totalVisitors: 6500, changeRate: -9.7, avgStayTime: 125, revenue: 810000 },
-    { date: '2026-02-08', totalVisitors: 3456, changeRate: -46.8, avgStayTime: 120, revenue: 430000 },
+    { date: '2026-03-20', totalVisitors: 2800, changeRate: 2.5, avgStayTime: 110, revenue: 350000 },
+    { date: '2026-03-21', totalVisitors: 3200, changeRate: 14.3, avgStayTime: 115, revenue: 400000 },
+    { date: '2026-03-22', totalVisitors: 4500, changeRate: 40.6, avgStayTime: 120, revenue: 560000 },
+    { date: '2026-03-23', totalVisitors: 5200, changeRate: 15.6, avgStayTime: 125, revenue: 650000 },
+    { date: '2026-03-24', totalVisitors: 6800, changeRate: 30.8, avgStayTime: 130, revenue: 850000 },
+    { date: '2026-03-25', totalVisitors: 7200, changeRate: 5.9, avgStayTime: 135, revenue: 900000 },
+    { date: '2026-03-26', totalVisitors: 6500, changeRate: -9.7, avgStayTime: 125, revenue: 810000 },
+    { date: '2026-03-27', totalVisitors: 3456, changeRate: -46.8, avgStayTime: 120, revenue: 430000 },
   ]
 
   useEffect(() => {
